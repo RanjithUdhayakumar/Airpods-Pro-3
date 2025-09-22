@@ -1,0 +1,327 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(0, 0, 0);
+    
+}
+i{
+    font-size: 25px;
+    color: white;
+    margin-left: -25px;
+}
+
+nav {
+      width: 100%;
+      height: 50px;
+      background: linear-gradient(90deg, rgb(0, 0, 0), rgb(80, 208, 234) );
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 60px;
+      box-shadow: 0 4px 10px gray;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Logo */
+    .logo {
+      width: 60px;
+      cursor: pointer;
+    }
+
+    /* Navbar links */
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 190px;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+      position: relative;
+      transition: 0.3s ease;
+    }
+
+    /* Hover underline animation */
+    ul li a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 3px;
+      background: #8bf10d;
+      transition: width 0.3s ease;
+    }
+
+    ul li a:hover::after {
+      width: 100%;
+    }
+
+    ul li a:hover {
+      color:gray;
+    }
+
+    /* Button (optional) */
+    .btn {
+      background: rgb(250, 250, 250);
+      color: #000000;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      /* font-weight: bold; */
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #000000;
+      color: #5de1ea;
+    }
+    h1{
+        font-size: 25px;
+        color: white;
+        margin-left: -170px;
+        margin-top: 4px;
+    }
+    h2{
+        font-family:serif;
+        font-weight: bold;
+        font-size: 50px;
+        margin-top: 140px;
+        margin-left: 280px;
+        /* text-align: center; */
+
+    }
+  .head {
+    margin-top: 20px;
+    margin-left: 30px;  /* centers the element itself */
+    font-family: cursive;
+    word-spacing: 2px;
+    text-align: center; /* centers the text inside */
+    font-size: 21px;
+    box-sizing: border-box;
+    color: gray;
+    width: 800px;
+    line-height: 1.5; /* better readability */
+}
+.toggle{
+   display: none;
+      /* font-size: -0px; */
+      cursor:pointer;
+      user-select: none;
+      margin-left: 100px;
+}
+
+img {
+      width: 420px;
+      height: 350px;
+     margin-top: -500px;
+      margin-left: 400px;
+      clip-path: (50% 0, 90% 30%, 60% 30%, 60% 80%, 40% 80%, 40% 30%, 10% 30%);
+      transform: translate(25rem, 1rem);
+      animation: airpods 3s infinite ease-in-out;
+    }
+
+    @keyframes airpods {
+      0% {
+        transform: translate(25rem, 1rem);
+      }
+      50% {
+        transform: translate(25rem, 2rem);
+      }
+      100% {
+        transform: translate(25rem,1rem);
+      }
+    }
+
+    .container {
+        margin-top: 95px;
+      margin-left: 50px;
+      display: flex;
+      gap: 100px;
+      /* width: 250px; */
+      flex-wrap: wrap;
+      /* height: 150px; */
+    }
+
+    .card {
+      background: rgb(0, 0, 0);
+      border: 2px solid white;     /*shorthand (width, style, color)*/
+      border-color: white;        /* sets all four borders to blue */
+      border-radius: 16px;
+      box-shadow: 5px 10px 39px gray;
+      width: 300px;
+      padding: 30px 25px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .icon {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #fffafa;
+      font-weight: 500;
+    }
+
+    .highlight-purple {
+      color: #7d4dff;
+      font-weight: bold;
+    }
+
+    .highlight-orange {
+      color: #ff7b00;
+      font-weight: bold;
+    }
+
+    .highlight-blue {
+      color: #00a2c7;
+      font-weight: bold;
+    }
+
+    .plus {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      width: 28px;
+      height: 28px;
+      background: #111;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav{
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  
+    /* display: none; Hide menu for now (could add toggle later) */
+  i{
+    margin-left: 2px;
+    font-size: 21px;
+    margin-top: 4px;
+  }
+  h1{
+    font-size: 20px;
+    margin-left: -108px;
+    margin-top: 7px;
+  }
+  h2 {
+    font-size: 28px;
+    margin-left: 80px ;
+    margin-top: 100px;
+    /* text-align: center; */
+  }
+
+  .head {
+    font-size: 16px;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  img {
+    width: 250px;
+    height: auto;
+    margin-left: -360px;
+    margin-top: 30px;
+    display: block;
+    transform: none;
+  }
+
+  .container {
+    margin-top: 60px ;
+    margin-left: 5px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .card {
+    width: 90%;
+  }
+nav ul {
+        display: none;
+        height: 20px;
+        flex-direction: column;
+        position: absolute;
+        top: 50px; left: 5px;
+        width: 100%;
+        gap: 10px;
+        background: rgb(0, 0, 0);
+        /* box-shadow: 0 4px 8px white; */
+        /* z-index: 100; */
+    }
+    nav .toggle, nav label {
+        display: block;
+        position: absolute;
+        font-size: 2rem;
+        margin-left: 180px;
+        margin-top: 3px;
+        z-index: 100px;
+        gap: 5px;
+    }
+    nav label {
+      margin-left: 150px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #222;
+        background: none;
+        border: none;
+    }
+    nav .btn {
+        margin-left: 0;
+    }
+    #toggle:checked ~ ul {
+        display: flex;
+    }
+
+
+  nav {
+    /* flex-direction: row; */
+    height: 50px;
+    padding: 10px;
+  }
+button{
+  margin-top: -10px;
+}
+  /* When toggled */
+  ul.show {
+    display: flex;
+    margin-bottom: 100px;
+    margin-left: 20px;
+  }
+
+}

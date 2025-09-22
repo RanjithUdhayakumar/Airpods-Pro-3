@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airpods</title>
+    <link rel="stylesheet" href="./Collection.css">
+    <script src="https://kit.fontawesome.com/12d695f553.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/12d695f553.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+     <nav>
+        <div class="logo">
+            <i class="fa-brands fa-apple"></i>
+        </div>
+        <div>
+            <h1 class="h1">Airpods Pro</h1>
+        </div>
+        <input type="checkbox" id="toggle" class="toggle" />
+        <label for="toggle">☰</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Collections.html">Collections</a></li>
+            <li><a href="./Cart.html">Cart</a></li>
+
+        </ul>
+        <a href="#" class="btn">Sign Up</a>
+    </nav>
+    <div class="video" >
+        <video width="100%" autoplay loop muted id="myVideo" src="/WhatsApp Video 2025-09-21 at 09.42.13_497a7c83.mp4" type="video/mp4"></video>
+    </div>
+
+     <div class="container">
+    <!-- Left Gallery -->
+    <div class="gallery">
+        <h1 class="head">Airpods Pro 3</h1>
+        <div class="heart"><i class="fa-regular fa-heart"></i></div>
+        <div class="share"><i class="fa-solid fa-share-nodes"></i></div>
+      <img id="main-img" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQD83_AV1?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1660803972361" alt="AirPods Pro 3">
+      <div class="thumbnails">
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQD83_AV1?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1660803972361" onclick="changeImage(this.src)">
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQD83_AV2?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1660803972361" onclick="changeImage(this.src)">
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQD83_AV3?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1660803972361" onclick="changeImage(this.src)">
+      </div>
+    </div>
+
+    <!-- Right Details -->
+    <div class="details">
+      <h1>Apple AirPods Pro 3 with MagSafe Charging Case</h1>
+      <div class="price">₹25,900.00 (Incl. all Taxes)</div>
+      <div class="emi">or ₹1,219/mo* <a href="#" style="color:#0af;">EMI Options</a></div>
+      <div class="color-box">White</div>
+
+      <div class="offers">
+        <h3>Super Savings (5 OFFERS)</h3>
+        <div class="offer-item">💳 Get up to 10% NeuCoins on select Apple products on Tata Neu HDFC Bank Credit Card</div>
+        <div class="offer-item">🏦 Instant discount ₹2000 & up to 6 months Low-cost EMI on ICICI / SBI Bank cards</div>
+        <div class="offer-item">🎁 Extra discount on exchange offers</div>
+      </div>
+
+      <div class="buttons">
+        <button class="compare">Compare</button>
+        <button class="connect">Connect to Store</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function changeImage(src) {
+      document.getElementById("main-img").src = src;
+    }
+  </script>
+    </body>
+    </html>
