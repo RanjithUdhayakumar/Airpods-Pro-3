@@ -447,7 +447,7 @@ nav {
   /* Navbar */
   nav{
     height: 50px;
-    width: 75%;
+    width: 80%;
     
   }
     /* display: none; Hide menu for now (could add toggle later) */
@@ -456,7 +456,7 @@ nav {
   }
   h1{
     font-size: 20px;
-    margin-left: -97px;
+    margin-left: -137px;
     margin-top: 18px;
   }
   h2 {
@@ -481,14 +481,14 @@ nav {
         display: block;
         position: absolute;
         font-size: 2rem;
-        margin-left: 140px;
-        margin-top: 1px;
+        margin-left: 175px;
+        margin-top: 6px;
         z-index: 100px;
         gap: 15px;
     }
     nav label {
-        margin-top: 2px;
-      margin-left: 120px;
+        margin-top: 3px;
+      margin-left: 140px;
         cursor: pointer;
         font-size: 1rem;
         color: #222;
@@ -576,7 +576,7 @@ button{
   color: #3a3c41;
 }
   .order-summary {
-    width: 285px;
+    width: 340px;
     min-width: unset;
     margin-left: 0;
     padding: 18px;
@@ -626,7 +626,7 @@ button{
   }
 
   .subscribe-form input[type="email"] {
-    width: 295px;
+    width: 352px;
     margin-bottom: 6px;
     border-radius: 5px;
     gap: 20px;
